@@ -1,0 +1,16 @@
+version: '2'
+services:
+  # Creation d'un conteneur poru l'app java
+  app-java:
+    build: .
+    # Fera partie du newtork 'web' (cree au prealable) pour y etre expose et accessible depuis l'exterieur
+    networks:
+      - web
+    ports:
+      - 80:8080
+
+networks:
+  # Specifie que le network web est accessible depuis l'exterieur
+  web:
+    external: true
+
