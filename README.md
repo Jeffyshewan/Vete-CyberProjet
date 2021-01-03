@@ -1,5 +1,5 @@
 # TP Spring, M1 III. Sujet choisi : TP Veterinary
-# Groupe : Adrien Lecomte, Chiara Brichot, Jean-François Gautreau.
+# Jean-François Gautreau
 
 Guide d'utilisation : <br />
 * Le projet contient un dossier API avec un fichier a importer dans Insomia. Il contient les appels a effectuer sur le projet.
