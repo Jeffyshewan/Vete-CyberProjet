@@ -9,6 +9,16 @@ Guide d'utilisation : <br />
 
 ****
 
+Installation : 
+* tout d'abord il faut créer le serveur "web" sur docker avec la commande, web étant son nom
+docker network create web
+
+* ensuite avec l'invit de commande, il faut créer l'image et le container, ceci peut être fait avec la commande
+docker-compose up -d
+
+* De là, le container devrait être lancé et disponible sur l'adresse : localhost:80
+* 80 étant le port choisi pour masquer le port original 8080
+
 Les Appels API sont les suivants :
 
 Class Prescription :
