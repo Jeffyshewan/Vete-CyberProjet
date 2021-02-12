@@ -19,6 +19,17 @@ Installation :
 * De là, le container devrait être lancé et disponible sur l'adresse : <b>localhost:80</b><br />
 * 80 étant le port choisi pour masquer le port original 8080<br />
 
+<b>Type de projet : non vulnérable</b>
+* Je suis parti sur le principe que mon projet est sécurisé.
+* 1e point : une authentification fonctionnelle. Si l'ont a pas les identifiants, on ne peut pas se connecter à 
+l'application et donc accéder à la data, ni la modifier. pour le tester on peut faire tenter des injections SQL.
+* 2e point : le port 8080 est caché. Cela évite donc de laisser une porte grande ouverte dans le système. (set dans le
+docker-compose), on peut tenter de connecter sur le port originel pour voir que celui-ci nous rejette.
+* 3e point (ou je pense être vulnérable) : le chiffrement des MDP, ils sont notés en dur dans le code, il faut utiliser
+un système de chiffrement mais je ne sais pas le faire
+
+****
+
 Les Appels API sont les suivants :
 
 Class Prescription :
